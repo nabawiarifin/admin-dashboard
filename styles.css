@@ -1,0 +1,62 @@
+:root{
+    --darkblue: #6096B4;
+    --blue: #93BFCF;
+    --lightblue: #BDCDD6;
+    --beige: #EEE9DA;
+}
+
+body{
+    font-size: 18px;
+    font-family: 'Roboto';
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 300px 2fr 1fr;
+    grid-template-rows: 20px 40px 1fr 1fr;
+    justify-content: center;
+}
+
+.navbar{
+    grid-column: 1 / 2;
+    grid-row: 1 / 5;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.menu-name{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.menu-name img {
+    height: 2.5rem;
+}
+
+.top-bar{
+    grid-column: 2 / 4;
+    grid-row: 1 / 2;
+}
+
+.action-bar{
+    grid-column: 2 / 4;
+    grid-row: 2 / 3;
+}
+
+.projects{
+    grid-column: 2 / 3;
+    grid-row: 3 / 5;
+}
+
+.announcements{
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+}
+
+.trending{
+    grid-column: 3 / 4;
+    grid-row: 4 / 5;
+}
