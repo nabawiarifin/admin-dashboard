@@ -8,13 +8,14 @@
 body{
     font-size: 18px;
     font-family: 'Roboto';
+    margin: 0px;
 }
 
 .container{
     height: 100vh;
     width: 100vw;
     display: grid;
-    grid-template-columns: 300px 2fr 1fr;
+    grid-template-columns: 350px 2fr 1fr;
     grid-template-rows: 20px 40px 1fr 1fr;
     justify-content: center;
 }
@@ -24,6 +25,23 @@ body{
     grid-row: 1 / 5;
     font-size: 1.5rem;
     font-weight: 600;
+    background: var(--darkblue);
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo{
+    font-size: 2.5rem;
+    margin-top: 20px;
+    margin-bottom: 80px;
+}
+
+.menu, .help{
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .menu-name{
@@ -32,13 +50,34 @@ body{
     align-items: center;
 }
 
-.menu-name img {
-    height: 2.5rem;
+.menu-name img{
+    height: 2.2rem;
+}
+
+.help{
+    margin-top: 80px;
 }
 
 .top-bar{
     grid-column: 2 / 4;
     grid-row: 1 / 2;
+    height: 80px;
+    align-items: center;
+    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 50px 5fr 50px 50px 1fr;
+    grid-template-areas: "searchlogo searchbar notification profilepicture profilename";
+}
+
+
+.top-bar input{
+    height: 2rem;
+    width: 300px;
+    border-radius: 20px;
+}
+.top-bar img{
+    border-radius: 50%;
+    height: 2.2rem;
 }
 
 .action-bar{
